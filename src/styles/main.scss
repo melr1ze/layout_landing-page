@@ -83,13 +83,14 @@
 }
 
 .menu__top {
+  top: 25px;
+  bottom: 0;
+  position: relative;
   margin-bottom: 60px;
   box-sizing: border-box;
-  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  padding: 0 20px;
   justify-content: space-between;
   align-items: center;
   width: 100%;
