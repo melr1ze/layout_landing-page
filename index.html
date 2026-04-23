@@ -20,7 +20,7 @@
     ></script>
     <link
       rel="stylesheet"
-      href="styles.css"
+      href="./src/styles/main.scss"
     />
     <link
       rel="preconnect"
@@ -39,42 +39,42 @@
   <body class="page__body">
     <header class="header">
       <div
-        class="header__top"
-        id="header-top"
+        class="top_bar"
+        id="top_bar"
       >
         <a
           href="#"
-          class="icon"
+          class="top_bar__logo"
         >
           <img
-            src="./src/images/THE-MET.png"
+            src="./src/images/THE MET.svg"
             alt="The MET"
           />
         </a>
-        <div class="header__icons">
+        <div class="top_bar__icons">
           <a
             href="#"
-            class="icon icon--phone"
+            class="top_bar__phone"
           >
             <img
-              src="./src/images/Icon-Phone-call.png"
+              src="./src/images/Icon-Phone-call.svg"
               alt="Phone call"
             />
           </a>
 
           <a
             href="#menu"
-            class="icon icon--menu"
+            class="top_bar__menu"
           >
             <img
-              src="./src/images/Icon-Burger-menu.png"
+              src="./src/images/Icon-Burger-menu.svg"
               alt="Menu"
             />
           </a>
         </div>
       </div>
-      <div class="header__bottom">
-        <h1 class="title">
+      <div class="header__content">
+        <h1 class="header__title">
           Welcome
           <br />
           to The MET
@@ -86,96 +86,163 @@
       class="menu page__menu"
       id="menu"
     >
-      <div class="menu__top">
+      <div class="top_bar">
         <a
           href="#"
-          class="icon"
+          class="top_bar__icon--aside"
         >
           <img
-            src="./src/images/THE-MET.png"
+            src="./src/images/THE MET.svg"
             alt="The MET"
           />
         </a>
 
         <a
           href="#"
-          class="icon icon--close"
+          class="top_bar__close"
         >
           <img
-            src="./src/images/Icon-Close.png"
+            src="./src/images/Icon-Close.svg"
             alt="close-menu"
           />
         </a>
       </div>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#">Home</a></li>
+      <div class="container">
+        <nav class="menu__nav">
+          <ul class="menu__nav__list">
+            <li class="menu__nav__item">
+              <a
+                href="#"
+                class="menu__nav__link"
+              >
+                Home
+              </a>
+            </li>
 
-          <li class="nav__item"><a href="#museum hours">About Us</a></li>
+            <li class="menu__nav__item">
+              <a
+                href="#museum-hours"
+                class="menu__nav__link"
+              >
+                About Us
+              </a>
+            </li>
 
-          <li class="nav__item"><a href="#now on view">Now on view</a></li>
+            <li class="menu__nav__item">
+              <a
+                href="#now-on-view"
+                class="menu__nav__link"
+              >
+                Now on view
+              </a>
+            </li>
 
-          <li class="nav__item">
-            <a href="#explore online">Explore Online</a>
-          </li>
+            <li class="menu__nav__item">
+              <a
+                href="#explore-online"
+                class="menu__nav__link"
+              >
+                Explore Online
+              </a>
+            </li>
 
-          <li class="nav__item"><a href="#contact us">Contacts</a></li>
-        </ul>
-      </nav>
+            <li class="menu__nav__item">
+              <a
+                href="#contact-us"
+                class="menu__nav__link"
+              >
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-      <div class="aside__content">
-        <div class="contact__1">The Met Fifth Avenue</div>
+        <div class="aside__content">
+          <div class="aside__content__contact1">
+            The Met Fifth Avenue
 
-        <a
-          href="tel:+1 212-535-7710"
-          class="call__number"
-        >
-          +1 212-535-7710
-        </a>
+            <br />
+            <a
+              href="tel:+1 212-535-7710"
+              class="aside__content__number"
+            >
+              +1 212-535-7710
+            </a>
+          </div>
 
-        <div class="contact__2">The Met Cloisters</div>
+          <div class="aside__content__contact2">The Met Cloisters</div>
 
-        <a
-          href="tel:+1 212-923-3700"
-          class="call__number"
-        >
-          +1 212-923-3700
-        </a>
+          <a
+            href="tel:+1 212-923-3700"
+            class="aside__content__number"
+          >
+            +1 212-923-3700
+          </a>
+
+          <div class="aside__content__order">Call to order</div>
+        </div>
+
       </div>
-
-      <div class="call__order">Call to order</div>
     </aside>
 
     <main class="main">
       <section
-        class="museum hours"
-        id="museum hours"
+        class="museum-hours"
+        id="museum-hours"
       >
-        <h2>Museum hours</h2>
+        <div class="museum-hours__title">
+          <div class="museum-hours__plan">Plan your visit</div>
+
+          <h2 class="museum-hours__text">Museum hours</h2>
+        </div>
+
+        <div class="museum-hours__content">
+          <div class="museum-hours__location-title">The Met Fifth Avenue</div>
+
+          <div class="museum-hours__schedule">
+
+            <span class="museum-hours__time">10 am – 5 pm</span>
+            <span class="museum-hours__days">Sun, Mon, Tue, Thu</span>
+
+            <span class="museum-hours__time">10 am – 9 pm</span>
+            <span class="museum-hours__days">Fri, Sat</span>
+
+            <span class="museum-hours__time">Closed</span>
+            <span class="museum-hours__days">Wen</span>
+
+          </div>
+
+          <div class="museum-hours__holiday-info">
+            <p class="museum-hours__holiday-label">Closed on</p>
+
+            <p>Thanks giving Day, Dec 25, Jan 1, and the first Monday in May.</p>
+          </div>
+        </div>
       </section>
 
       <section
-        class="now On view"
-        id="now On view"
+        class="now-on-view"
+        id="now-on-view"
       >
         <h3>Now On View</h3>
       </section>
 
       <section
-        class="explore online"
-        id="explore online"
+        class="explore-online"
+        id="explore-online"
       >
         <h4>More to Explore Online</h4>
       </section>
 
       <section
-        class="contact us"
-        id="contact us"
+        class="contact-us"
+        id="contact-us"
       >
         <h5>Contact us</h5>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer"></footer>
   </body>
 </html>
