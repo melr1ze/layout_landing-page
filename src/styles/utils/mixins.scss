@@ -1,12 +1,18 @@
-@mixin content-padding() {
+@mixin top-bar-padding() {
   @media (min-width: 576px) {
     padding: 50px 72px;
   }
 }
 
 @mixin padding-inline() {
-  @media (min-width: 576px) {
+
+  padding-inline: 20px;
+  @media (min-width: 625px) {
     padding-inline: 72px;
+  }
+
+  @media (min-width: 1260px) {
+    padding-inline: 120px;
   }
 }
 
@@ -17,4 +23,34 @@
     #{$property}: $value;
   }
 }
+
+@mixin onTablet {
+  @media (min-width: 625px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1260px) {
+    @content;
+  }
+}
+
+@mixin onDevices() {
+  --columns: 2;
+  display: grid;
+  column-gap: 24px;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  @include onTablet() {
+    --columns: 6;
+  }
+
+  @include onDesktop() {
+    --columns: 12;
+  }
+}
+
+
 
