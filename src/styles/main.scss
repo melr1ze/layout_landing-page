@@ -6,13 +6,13 @@
 }
 
 html {
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
   font-family: Cinzel, serif;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: 'Cinzel', serif;
+  font-family: Cinzel, serif;
 }
 
 .page {
@@ -29,6 +29,7 @@ html {
 
   @include mixins.top-bar-padding;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -309,24 +310,29 @@ html {
 }
 
 .now-on-view {
-
+  @include mixins.onDevices;
 
   &__title {
   text-align: center;
   grid-column: 1 / -1;
+   margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
 
   @include mixins.onTablet {
     grid-column: 2 / 6;
+    font-size: 48px;
+    line-height: 48px;
   }
 
   @include mixins.onDesktop {
     grid-column: 4 / 10;
+    font-size: 48px;
+    line-height: 48px;
   }
 
-    margin: 0;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 32px;
+
   }
 
   &__text {
@@ -349,11 +355,35 @@ html {
 
   &__pictures1 {
     margin-top: 48px;
-    grid-column: 1 / -1;
 
-   &-L {
+
+    &--photos {
+      
+    &-L {
     margin-right: 20px;
+    object-fit: cover;
+    max-width: 100%;
+  height: auto;
+    grid-column: 1 / 2;
+
+    @include mixins.onTablet {
+      grid-column: 1 / 3;
+    }
   }
+
+   &-R {
+    margin-right: 20px;
+    object-fit: cover;
+    grid-column: 2 / -1;
+    max-width: 100%;
+    height: auto;
+
+    @include mixins.onTablet {
+      grid-column: 4 / -1;
+    }
+  }
+    }
+
 
 
    &-info {
@@ -391,9 +421,36 @@ html {
   &__pictures3 {
     margin-top: 48px;
     grid-column: 1 / -1;
+    @include mixins.onDevices;
+
+    &-container {
+      @include mixins.onDevices;
+    }
 
     &-L {
       margin-right: 20px;
+      grid-column: 1 / 2;
+      width: 100%;
+      @include mixins.onTablet {
+      grid-column: 1 / 3;
+    }
+
+    @include mixins.onDesktop {
+      grid-column: 1 / 6;
+    }
+    }
+
+    &-R {
+      margin-right: 20px;
+      grid-column: 2 / -1;
+      width: 100%;
+      @include mixins.onTablet {
+      grid-column: 3 / -1;
+    }
+
+    @include mixins.onDesktop {
+      grid-column: 1 / 6;
+    }
     }
 
     &-info {
