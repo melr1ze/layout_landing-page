@@ -73,14 +73,33 @@
             />
           </a>
 
+          <div class="top-bar__hover-numbers">
+            <a
+                    href="tel:+1 212-535-7710"
+                    class="top-bar__hover-number"
+                  >
+                    The MET Fifth avenue
+              <br />
+                    +1 212-535-7710
+            </a>
+            <a
+                    href="tel:+1 212-923-3700"
+                    class="top-bar__hover-number"
+                  >
+                    The MET Cloisters
+              <br />
+                    +1 212-923-3700
+            </a>
+          </div>
+
           <a
             href="#menu"
             class="top_bar__menu"
           >
-            <img
-              src="./src/images/Icon-Burger-menu.svg"
-              alt="Menu"
-            />
+            <img src="./src/images/Icon-Burger-menu.svg"
+            class="icon-default" alt="menu">
+            <img src="./src/images/Icon-Burger-menu-hover.svg"
+            class="icon-hover" alt="menu-hover">
           </a>
         </div>
       </div>
@@ -265,96 +284,89 @@
           more.
         </div>
 
-        <div class="now-on-view__pictures1">
-          <div class="now-on-view__photos">
+        <article class="now-on-view__pictures1">
+          <div class="now-on-view__pictures1-container">
 
-            <img
-          src="src/images/pictures1-L-small.svg"
-          alt="A New Look at Old Masters"
-          class="now-on-view__img now-on-view__img-L"
-            >
+            <img src="./src/images/pictures1-L-Desktop.svg"
+            class="now-on-view__pictures1--left"
+            alt="now-on-view__pictures1-L">
 
-            <img
-            src="src/images/pictures1-R.svg"
-            alt="Gallery view"
-            class="now-on-view__img now-on-view__img-R"
-            >
+            <img src="./src/images/pictures1-R.svg"
+            class="now-on-view__pictures1--right"
+            alt="now-on-view__pictures1-R">
           </div>
+
           <div class="now-on-view__pictures1-info">
-            <div class="now-on-view__pictures1-title">
-              A New Look at Old Masters
-            </div>
-
-            <p class="now-on-view__pictures1-date">
-              December 12, 2020 – Through
-              <br />
-              Spring 2023
-            </p>
+            <h3 class="now-on-view__pictures1-title">A New Look at Old Masters</h3>
+            <p class="now-on-view__pictures1-date">December 12, 2020 — Through Spring 2023</p>
           </div>
-        </div>
-        <div class="now-on-view__pictures2">
-          <img
+        </article>
+
+        <article class="now-on-view__pictures2">
+          <div class="now-on-view__pictures2-container">
+            <img
             src="src/images/puctures2-L.svg"
-            alt="pictures1 L"
-            class="now-on-view__pictures2-photo"
+            alt="pictures2-L"
+            class="now-on-view__pictures2--left"
           />
 
-          <img
+            <img
             src="src/images/pictures2-M.svg"
             alt="pictures2-M"
-            class="now-on-view__pictures2-photo"
+            class="now-on-view__pictures2--middle"
           />
 
-          <img
+            <img
             src="src/images/pictures2-R.svg"
             alt="pictures2-R"
-            class="now-on-view__pictures2-photo"
+            class="now-on-view__pictures2--right"
           />
+          </div>
 
           <div class="now-on-view__pictures2-info">
-            <div class="now-on-view__pictures1-title">
+            <div class="now-on-view__pictures2-title">
               Bodhisattvas of Wisdom,
               <br />
               Compassion, and Power
             </div>
 
-            <p class="now-on-view__pictures1-date">
+            <p class="now-on-view__pictures2-date">
               March 27, 2021 – October 30, 2022
             </p>
           </div>
-        </div>
-        <div class="now-on-view__pictures3">
+        </article>
 
+        <article class="now-on-view__pictures3">
           <div class="now-on-view__pictures3-container">
             <img
             src="src/images/pictures3-L.svg"
             alt="pictures3-L"
-            class="now-on-view__pictures3-L"
+            class="now-on-view__pictures3--left"
           />
             <img
-              src="src/images/pictures3-L-mobile.svg"
+              src="src/images/pictures3-R-Desktop.svg"
               alt="pictures3-R"
-              class="now-on-view__pictures3-R"
+              class="now-on-view__pictures3--right"
             />
           </div>
-
         </div>
-        <div class="now-on-view__pictures3-info">
-          <div class="now-on-view__pictures3-title">
+
+          <div class="now-on-view__pictures3-info">
+            <div class="now-on-view__pictures3-title">
             Inspiring Walt Disney:
-            <br />
+              <br />
             The Animation of French
-            <br />
+              <br />
              Decorative Arts
-          </div>
+            </div>
 
-          <p class="now-on-view__pictures3-date">
+            <p class="now-on-view__pictures3-date">
             December 10, 2021 – March 6, 2022
-            <br />
+              <br />
               Spring 2023
-          </p>
-        </div>
-        </div>
+            </p>
+          </div>
+        </article>
 
         <div class="now-on-view__button">
           <a
@@ -370,68 +382,74 @@
         class="explore-online"
         id="explore-online"
       >
-        <h4 class="explore-online-title">More to Explore Online</h4>
+        <h4 class="explore-online__title">More to Explore Online</h4>
 
-        <div class="explore-online__pictures1">
-          <img
+        <div class="explore-online__container">
+          <article class="explore-online__pictures1">
+            <div class="explore-online__pictures1-photos">
+              <img
             src="src/images/explore1.svg"
             alt="explore1"
-            class="explore-online__image"
+            class="explore-online__pictures1-photo"
           />
+            </div>
 
-          <div class="explore-online__info">
-            <div class="explore-online__info-title">Collection Areas</div>
+            <div class="explore-online__pictures1-info">
+              <div class="explore-online__pictures1-title">Collection Areas</div>
 
-            <p class="explore-online__info-text">
+              <p class="explore-online__pictures1-text">
               These collection areas study, exhibit, and care for the objects in
               The Met
-              <br />
+                <br />
               collection.
-            </p>
-          </div>
-        </div>
+              </p>
+            </div>
+          </article>
 
-        <div class="explore-online__pictures2">
-          <img
+          <article class="explore-online__pictures2">
+            <div class="explore-online__pictures2-photos">
+              <img
             src="src/images/explore2.svg"
             alt="explore2"
-            class="explore-online__image"
+            class="explore-online__pictures2-photo"
           />
+            </div>
+            <div class="explore-online__pictures2-info">
+              <div class="explore-online__pictures2-title">Travel</div>
 
-          <div class="explore-online__info">
-            <div class="explore-online__info-title">Travel</div>
-
-            <p class="explore-online__info-text">
+              <p class="explore-online__pictures2-text">
               Travel with The Met connects the Museum's wide and diverse
               audience
-              <br />
+                <br />
               to art, inspiration, and historical
-              <br />
+                <br />
               perspective.
-            </p>
-          </div>
-        </div>
+              </p>
+            </div>
+          </article>
 
-        <div class="explore-online__pictures3">
-          <img
+          <article class="explore-online__pictures3">
+            <div class="explore-online__pictures3-photos">
+              <img
             src="src/images/explore3.svg"
             alt="explore3"
-            class="explore-online__image"
+            class="explore-online__pictures3-photo"
           />
+            </div>
+            <div class="explore-online__pictures3-info">
+              <div class="explore-online__pictures3-title">Virtual group tours</div>
 
-          <div class="explore-online__info">
-            <div class="explore-online__info-title">Virtual group tours</div>
-
-            <p class="explore-online__info-text">
+              <p class="explore-online__pictures3-text">
               Request a guided tour, reserve
-              <br />
+                <br />
               admission and lead your own small
-              <br />
+                <br />
               group, or request a live virtual tour led
-              <br />
+                <br />
               by a Museum guide.
-            </p>
-          </div>
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -442,14 +460,14 @@
         <h5 class="contact-us__title">Contact us</h5>
 
         <div class="contact-us__info1">
-          <div class="contact-us__info1-title">The Met Fifth Avenue</div>
+          <div class="contact-us-title1">The Met Fifth Avenue</div>
 
-          <div class="contact-us__info1-phone">
+          <div class="contact-us-phone1">
             <span>Phone</span>
             <span>+1 212-535-7710</span>
           </div>
 
-          <div class="contact-us__info1-address">
+          <div class="contact-us-address1">
             <span>Address</span>
             <span>
               1000 Fifth Avenue
@@ -460,14 +478,14 @@
         </div>
 
         <div class="contact-us__info2">
-          <div class="contact-us__info1-title">The Met Cloisters</div>
+          <div class="contact-us-title2">The Met Cloisters</div>
 
-          <div class="contact-us__info2-phone">
+          <div class="contact-us-phone2">
             <span>Phone</span>
             <span>+1 212-923-3700</span>
           </div>
 
-          <div class="contact-us__info2-address">
+          <div class="contact-us-address2">
             <span>Address</span>
             <span>
               99 Margaret Corbin Drive
@@ -478,41 +496,42 @@
             </span>
           </div>
         </div>
-      </section>
-    </main>
 
-    <div class="info">
-      <form class="contact-form">
-        <input
+        <div class="contact-us__info3">
+          <form class="contact-us__info3-form">
+            <input
           type="text"
-          class="contact-form__input"
+          class="contact-us__info3-input1"
           placeholder="NAME"
         />
 
-        <input
+            <input
           type="email"
-          class="contact-form__input"
+          class="contact-us__info3-input2"
           placeholder="EMAIL"
         />
 
-        <textarea
-          class="contact-form__textarea"
+            <textarea
+          class="contact-us__info3-textarea"
           placeholder="MESSAGE"
         ></textarea>
 
-        <button
+            <button
           type="submit"
-          class="contact-form__button"
+          class="contact-us__info3-button"
         >
           SEND
-        </button>
-      </form>
-    </div>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
 
+    
     <footer class="footer">
       <div class="footer__content">
         <img
-          src="src/images/Group 31.svg"
+          src="src/images/Footer.svg"
           alt="footer__content"
           class="footer__content-image"
         />
